@@ -37,7 +37,6 @@ def security_login_post(self,
 
 ```python
 body = SecurityLoginRequest()
-
 result = security_controller.security_login_post(body)
 ```
 

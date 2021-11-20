@@ -11,7 +11,7 @@ else:
         long_description = fh.read()
 
 setup(
-    name='bdfs',
+    name='manager',
     version='1.0.0',
     description='BDFS',
     long_description=long_description,

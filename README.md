@@ -14,51 +14,51 @@ Python and PIP executables should be defined in your PATH. Open command prompt a
 * Using command line, navigate to the directory containing the generated files (including `requirements.txt`) for the SDK.
 * Run the command `pip install -r requirements.txt`. This should install all the required dependencies.
 
-![Building SDK - Step 1](https://apidocs.io/illustration/python?workspaceFolder=Bdfs-Python&step=installDependencies)
+![Building SDK - Step 1](https://apidocs.io/illustration/python?workspaceFolder=Manager-Python&step=installDependencies)
 
 ## Installation
 
-The following section explains how to use the bdfs library in a new project.
+The following section explains how to use the manager library in a new project.
 
 ### 1. Open Project in an IDE
 
 Open up a Python IDE like PyCharm. The basic workflow presented here is also applicable if you prefer using a different editor or IDE.
 
-![Open project in PyCharm - Step 1](https://apidocs.io/illustration/python?workspaceFolder=Bdfs-Python&step=pyCharm)
+![Open project in PyCharm - Step 1](https://apidocs.io/illustration/python?workspaceFolder=Manager-Python&step=pyCharm)
 
 Click on `Open` in PyCharm to browse to your generated SDK directory and then click `OK`.
 
-![Open project in PyCharm - Step 2](https://apidocs.io/illustration/python?workspaceFolder=Bdfs-Python&step=openProject0)
+![Open project in PyCharm - Step 2](https://apidocs.io/illustration/python?workspaceFolder=Manager-Python&step=openProject0)
 
 The project files will be displayed in the side bar as follows:
 
-![Open project in PyCharm - Step 3](https://apidocs.io/illustration/python?workspaceFolder=Bdfs-Python&projectName=bdfs&step=openProject1)
+![Open project in PyCharm - Step 3](https://apidocs.io/illustration/python?workspaceFolder=Manager-Python&projectName=manager&step=openProject1)
 
 ### 2. Add a new Test Project
 
 Create a new directory by right clicking on the solution name as shown below:
 
-![Add a new project in PyCharm - Step 1](https://apidocs.io/illustration/python?workspaceFolder=Bdfs-Python&projectName=bdfs&step=createDirectory)
+![Add a new project in PyCharm - Step 1](https://apidocs.io/illustration/python?workspaceFolder=Manager-Python&projectName=manager&step=createDirectory)
 
 Name the directory as "test".
 
-![Add a new project in PyCharm - Step 2](https://apidocs.io/illustration/python?workspaceFolder=Bdfs-Python&step=nameDirectory)
+![Add a new project in PyCharm - Step 2](https://apidocs.io/illustration/python?workspaceFolder=Manager-Python&step=nameDirectory)
 
 Add a python file to this project.
 
-![Add a new project in PyCharm - Step 3](https://apidocs.io/illustration/python?workspaceFolder=Bdfs-Python&projectName=bdfs&step=createFile)
+![Add a new project in PyCharm - Step 3](https://apidocs.io/illustration/python?workspaceFolder=Manager-Python&projectName=manager&step=createFile)
 
 Name it "testSDK".
 
-![Add a new project in PyCharm - Step 4](https://apidocs.io/illustration/python?workspaceFolder=Bdfs-Python&projectName=bdfs&step=nameFile)
+![Add a new project in PyCharm - Step 4](https://apidocs.io/illustration/python?workspaceFolder=Manager-Python&projectName=manager&step=nameFile)
 
 In your python file you will be required to import the generated python library using the following code lines
 
 ```python
-from bdfs.bdfs_client import BdfsClient
+from manager.manager_client import ManagerClient
 ```
 
-![Add a new project in PyCharm - Step 5](https://apidocs.io/illustration/python?workspaceFolder=Bdfs-Python&projectName=bdfs&libraryName=bdfs.bdfs_client&className=BdfsClient&step=projectFiles)
+![Add a new project in PyCharm - Step 5](https://apidocs.io/illustration/python?workspaceFolder=Manager-Python&projectName=manager&libraryName=manager.manager_client&className=ManagerClient&step=projectFiles)
 
 After this you can write code to instantiate an API client object, get a controller object and  make API calls. Sample code is given in the subsequent sections.
 
@@ -66,7 +66,7 @@ After this you can write code to instantiate an API client object, get a control
 
 To run the file within your test project, right click on your Python file inside your Test project and click on `Run`
 
-![Run Test Project - Step 1](https://apidocs.io/illustration/python?workspaceFolder=Bdfs-Python&projectName=bdfs&libraryName=bdfs.bdfs_client&className=BdfsClient&step=runProject)
+![Run Test Project - Step 1](https://apidocs.io/illustration/python?workspaceFolder=Manager-Python&projectName=manager&libraryName=manager.manager_client&className=ManagerClient&step=runProject)
 
 ## Test the SDK
 
@@ -99,10 +99,10 @@ The following parameters are configurable for the API Client:
 The API client can be initialized as follows:
 
 ```python
-from bdfs.bdfs_client import BdfsClient
-from bdfs.configuration import Environment
+from manager.manager_client import ManagerClient
+from manager.configuration import Environment
 
-client = BdfsClient(
+client = ManagerClient(
     access_token='AccessToken',
     environment=Environment.PRODUCTION,)
 ```

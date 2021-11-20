@@ -32,7 +32,6 @@ def openapi_openapi_by_version_get(self,
 
 ```python
 version = 'version4'
-
 result = open_api_controller.openapi_openapi_by_version_get(version)
 ```
 

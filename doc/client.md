@@ -17,10 +17,10 @@ The following parameters are configurable for the API Client:
 The API client can be initialized as follows:
 
 ```python
-from bdfs.bdfs_client import BdfsClient
-from bdfs.configuration import Environment
+from manager.manager_client import ManagerClient
+from manager.configuration import Environment
 
-client = BdfsClient(
+client = ManagerClient(
     access_token='AccessToken',
     environment=Environment.PRODUCTION,)
 ```

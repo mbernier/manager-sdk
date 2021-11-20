@@ -1,0 +1,31 @@
+
+# Vendor Product Options Api Get List
+
+## Structure
+
+`VendorProductOptionsApiGetList`
+
+## Fields
+
+| Name | Type | Tags | Description |
+|  --- | --- | --- | --- |
+| `handle_generation` | `string` | Optional | - |
+| `options` | `string` | Optional | - |
+| `product_type` | `string` | Required | **Constraints**: *Maximum Length*: `100` |
+| `sku_generation` | `string` | Optional | - |
+| `variations` | `string` | Optional | - |
+| `vendor` | [`VendorProductOptionsApiGetListVendor`](/doc/models/vendor-product-options-api-get-list-vendor.md) | Optional | - |
+
+## Example (as JSON)
+
+```json
+{
+  "handle_generation": null,
+  "options": null,
+  "product_type": "product_type4",
+  "sku_generation": null,
+  "variations": null,
+  "vendor": null
+}
+```
+
